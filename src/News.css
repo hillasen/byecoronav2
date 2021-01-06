@@ -1,0 +1,10 @@
+.news{
+    clear: both;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 50px;
+    height: 100px;
+    background-color: #eff8ff;
+    border-radius: 15px;
+    text-align: center;
+}
