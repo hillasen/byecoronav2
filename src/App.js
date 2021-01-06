@@ -19,7 +19,7 @@ function App() {
   const [covidData, setData] = useState({});
   const [covidNews, setNews] = useState({});
   async function hello(){
-    const coronaData = await axios.get('/korea/country/new/?serviceKey=499127e19f23e274d2e8ff5042a206c26');
+    const coronaData = await axios.get('https://api.corona-19.kr/korea/country/new/?serviceKey=499127e19f23e274d2e8ff5042a206c26');
     const coronaNews = await axios.get('http://newsapi.org/v2/top-headlines?country=kr&apiKey=09f581ba05b94930bd04a81c31bf945a&q=코로나');
     setData(coronaData.data);
     setNews(coronaNews.data.articles);
