@@ -10,6 +10,7 @@ import News from './News';
 import './index.css';
 import { Router } from 'react-router-dom';
 
+
 function Food({name}){
   return `Hello ${name}`;
 }
@@ -33,6 +34,7 @@ function App() {
   return (
     <div>
       {isLoading ? <div class="load"><Loader type="Audio" color="#ff7b54" height={100} width={100} /> </div> : 
+      
       <Fragment>
       <Box today={covidData.korea.newCase} infected={covidData.korea.totalCase} cured={covidData.korea.recovered} death={covidData.korea.death}/>
       <div class="news_box">

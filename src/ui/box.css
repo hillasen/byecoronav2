@@ -1,3 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@800&display=swap");
+
+.name_today{
+    font-size: 30px;
+}
+.name_cured{
+    font-size: 30px;
+}
+.name_infected{
+    font-size: 30px;
+}
+.name_death{
+    font-size: 30px;
+}
+.box_today{
+    margin-top: 20px;
+    border-radius: 15px;
+    margin-left: calc((100% - 300px)/2);
+    border: 1px solid blue;
+    background-color: blue;
+    width: 300px;
+    height: 200px;
+    font-size: 80px;
+    color: white;
+    text-align: center;
+}
+.box_cured{
+    margin-top: 20px;
+    border-radius: 15px;
+    margin-left: calc((100% - 300px)/2);
+    border: 1px solid green;
+    width: 300px;
+    height: 200px;
+    font-size: 80px;
+    background-color: green;
+    color: white;
+    text-align: center;
+}
+.box_infected{
+
+    margin-top: 20px;
+    border-radius: 15px;
+    margin-left: calc((100% - 300px)/2);
+    border: 1px solid orange;
+    width: 300px;
+    height: 200px;
+    font-size: 80px;
+    background-color: orange;
+    color: white;
+    text-align: center;
+}
+.box_death{
+    margin-top: 20px;
+    border-radius: 15px;
+    margin-left: calc((100% - 300px)/2);
+    border: 1px solid red;
+    width: 300px;
+    height: 200px;
+    font-size: 80px;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+
+.covid_box{
+    font-family: 'Nanum Gothic', sans-serif;
+    clear: both;
+    width: 100%;
+    animation-duration: 1s;
+    animation-name: updown;
+    margin-top: 50px;
+}
+
+@keyframes updown{
+    from {
+        opacity: 0;
+        margin-top: 0px;
+    }
+    to {
+        opacity: 1;
+        margin-top: 50px;
+    }
+}
+
+
+@media all and (min-width:1025px) {
+
 .name_today{
     font-size: 30px;
 }
@@ -76,4 +163,5 @@
         opacity: 1;
         margin-top: 50px;
     }
+}
 }

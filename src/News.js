@@ -11,7 +11,7 @@ function News({title, description, url}){
     }
     return (
         <div class="newser" >
-            <div class="news"> <h1>{title}</h1>{description} </div>
+            <div class="news" onClick={() => window.open(url)}> <h1>{title}</h1>{description + " (클릭해서 더 보기)"} </div>
         </div>
 
     );

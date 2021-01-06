@@ -3,8 +3,23 @@
     width: 90%;
     margin-left: 5%;
     margin-top: 50px;
-    height: 100px;
+    height: 400px;
     background-color: #eff8ff;
     border-radius: 15px;
     text-align: center;
+}
+
+
+@media all and (min-width:1025px) {
+
+.news{
+    clear: both;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 50px;
+    height: 150px;
+    background-color: #eff8ff;
+    border-radius: 15px;
+    text-align: center;
+}
 }
