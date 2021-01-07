@@ -9,6 +9,7 @@ import './loader.css';
 import News from './News';
 import './index.css';
 import { Router } from 'react-router-dom';
+import {Helmet} from 'react-helmet';
 
 
 function Food({name}){
@@ -33,15 +34,22 @@ function App() {
   })
   return (
     <div>
+      <Helmet>
+        <title>바이코로나-2021Version</title>
+        <meta name="description" content="빠르고 간단한 코로나 실시간 정보 바이코로나!" data-react-helmet="true"/>
+      </Helmet>
       {isLoading ? <div class="load"><Loader type="Audio" color="#ff7b54" height={100} width={100} /> </div> : 
       
       <Fragment>
+        <h1 class="mainer">Byecorona.ga</h1>
+        <h1 class="dev">Developed by Hillasen</h1>
       <Box today={covidData.korea.newCase} infected={covidData.korea.totalCase} cured={covidData.korea.recovered} death={covidData.korea.death}/>
       <div class="news_box">
       {covidNews.map(news => (
         <News title={news.title} url={news.url} description={news.description}/>
       ))}
       </div>
+      <h6 class="copy">copyright © by HILLASEN 2020-2021</h6>
       </Fragment>
       }
     </div>

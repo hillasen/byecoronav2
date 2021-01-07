@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Redressed&display=swap");
+
 .news_box {
   clear: both;
   padding-top: 10px;
@@ -11,4 +14,18 @@
   to  {
     opacity: 1;
   }
+}
+
+.mainer{
+  text-align: center;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+.dev {
+  text-align: center;
+  font-family: 'Redressed', cursive;
+}
+
+.copy{
+  text-align: center;
 }
