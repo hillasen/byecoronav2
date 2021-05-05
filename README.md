@@ -1,5 +1,7 @@
 # Byecorona_2021 VERSION
 
-Bye Corona
+About this
+=============
+오픈소스 코로나 19 현황 사이트
 
 <http://hillaapi.iwinv.net>
